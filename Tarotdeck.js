@@ -7,7 +7,7 @@ class Tarotdeck {
     numberOfcards = 78; 
     majorarcana = 22; 
     minorarcana = 56; 
-    backofcards= ["./Images/backofcards.jpg"]; 
+    backofcards= "/Images/backofcards.jpg"; 
     dealcards(imagesofcards)
     {
     
