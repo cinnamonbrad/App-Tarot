@@ -1,0 +1,31 @@
+img
+{
+    width: 174.5px;
+    height:334.75px; 
+    background-size: contain;
+    background-position: center; 
+    margin-bottom: 1rem;
+}
+
+.card_box:hover
+{
+margin-left: 200px;
+}
+.btn {
+    font: size 3rem;
+    font-weight:700;
+    /*padding:; */ 
+    color:blueviolet; 
+    transition-property:transform;  
+    transition-duration:0.3s;
+    transition-timing-function:ease-in;
+    transition-delay: 1s;
+   /* transition: all 0.3s; */
+}
+
+.btn:hover{
+   /* transform: ;*/
+    background-color: purple;
+    color:white; 
+
+}
