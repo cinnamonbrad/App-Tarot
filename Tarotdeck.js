@@ -1,3 +1,4 @@
+
 class Tarotdeck {
     constructor(name, imagesofcards)
     {
@@ -7,13 +8,13 @@ class Tarotdeck {
     numberOfcards = 78; 
     majorarcana = 22; 
     minorarcana = 56; 
+    backofcards = "/Images/backofcards.jpg";
     shuffleCards (imagesofcards) //method that randomizes the cards and it passes in the array that are the cards
     {  
-        cardreturn = "/Images/backofcards.jpg";
+         
         imagesofcards.sort(()=> MATH.random() - 0.5); 
-        cardreturn = imagesofcards[0]; 
-        console.log(imagesofcards[0])
-        return cardreturn; 
+        this.backofcards = imagesofcards[0]; 
+        return this.backofcards; 
     }
     
     dealcards(imagesofcards) //passes in an array of strings that are the cards

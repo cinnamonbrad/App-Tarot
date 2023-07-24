@@ -17,15 +17,7 @@ const content = `
 </div>
 <button class="btn">Start</button>`; 
 document.body.innerHTML = content; 
-// testing out the shuffleCards function
-shuffleCards (imagesofcards) //method that randomizes the cards and it passes in the array that are the cards
-    {  
-        cardreturn = "/Images/backofcards.jpg";
-        imagesofcards.sort(()=> MATH.random() - 0.5); 
-        cardreturn = imagesofcards[0]; 
-        console.log(imagesofcards[0])
-        return cardreturn; 
-    }
+
 x = deck.shuffleCards();
 
 console.log(x); 
