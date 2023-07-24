@@ -2,20 +2,21 @@ class Tarotdeck {
     constructor(name, imagesofcards)
     {
         this.name = name, 
-        this. imagesofcards = imagesofcards 
+        this.imagesofcards = imagesofcards 
     }
     numberOfcards = 78; 
     majorarcana = 22; 
     minorarcana = 56; 
     backofcards= "/Images/backofcards.jpg"; 
-    dealcards(imagesofcards)
+    shuffleCards (imagesofcards) //method that randomizes the cards and it passes in the array that are the cards
     {
     
     }
-    shuffleCards (imagesofcards) //method that randomizes the cards
+    
+    dealcards(imagesofcards) //passes in an array of strings that are the cards
     {
     
     }
-    }; 
+}; 
     export default Tarotdeck; 
     
