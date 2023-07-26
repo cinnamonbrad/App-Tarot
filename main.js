@@ -6,7 +6,7 @@ import Tarotdeck from "./Tarotdeck.js";
 
 
 const deck = new Tarotdeck("Rider-Waite",cards);
-const x = deck.imagesofcards[0];   
+let x = deck.imagesofcards[0];   
 
 const content = `
 <h1> TAROT WEB APPLICATION</h1>
@@ -22,7 +22,7 @@ x = deck.shuffleCards();
 
 console.log(x); 
 
-y = deck.shuffleCards(); 
+let y = deck.shuffleCards(); 
 console.log(y); 
 
 deck.dealcards(); 
