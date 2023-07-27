@@ -18,15 +18,13 @@ const content = `
 <button class="btn">Start</button>`; 
 document.body.innerHTML = content; 
 
-x = deck.shuffleCards();
+deck.shuffleCards();
 
+deck.shuffleCards(); 
+
+
+x = deck.dealcards("3"); 
 console.log(x); 
-
-let y = deck.shuffleCards(); 
-console.log(y); 
-
-deck.dealcards(); 
-
 /*const content1 = `<h1> TAROT WEB APPLICATION</h1>
 <h2> Welcome to your very own tarot reader online!</h2>
 <h3> Press the button below to get started with using the online tarot reader</h3>

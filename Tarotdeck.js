@@ -25,22 +25,64 @@ class Tarotdeck {
 
     }
     
-    dealcards(imagesofcards, type) //passes in an array of strings that are the cards
+    dealcards(type) //passes in an array of strings that are the cards
     {
+       // a = this.shuffleCards()
+        let b = [];
+        // let first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth;
+        // b.add(first);
+        // b.add(second); 
+        // b.add(third); 
+        // b.add(fourth); 
+        // b.add(fifth); 
+        // b.add(sixth);
+        // b.add(seventh); 
+        // b.add(eighth); 
+        // b.add(ninth); 
+        // b.add(tenth); 
     if (type == "celtic" )
     {
-
+        for (let i = 0; i <10; i++)
+        {
+            let n = this.imagesofcards[i]; 
+            b.push(n); 
+            if ((n == this.backofcards))
+            {
+                b.pop(this.imagesofcards[i]);
+                b.push(this.imagesofcards[i+50]); 
+            }
+        }
+        return b; 
     }; 
 
-    if (type == "three card")
+    if (type == "3")
     {
-
+        for (let i = 0; i <3; i++)
+        {
+            let n = this.imagesofcards[i]; 
+            b.push(n); 
+            if ((n == this.backofcards))
+            {
+                b.pop(this.imagesofcards[i]);
+                b.push(this.imagesofcards[i+50]); 
+            }
+        }
+        return b; 
     }; 
-    if (type == "one card")
+    if (type == "1")
     {
-
+        for (let i = 0; i <1; i++)
+        {
+            let n = this.imagesofcards[i]; 
+            b.push(n); 
+            if ((n == this.backofcards))
+            {
+                b.pop(this.imagesofcards[i]);
+                b.push(this.imagesofcards[i+50]); 
+            }
+        }
+        return b; 
     };
     }
 }; 
-    export default Tarotdeck; 
-    
+    export default Tarotdeck;
