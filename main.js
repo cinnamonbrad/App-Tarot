@@ -6,7 +6,7 @@ import Tarotdeck from "./Tarotdeck.js";
 
 
 const deck = new Tarotdeck("Rider-Waite",cards);
-let x = deck.imagesofcards[0];   
+let x = deck.backofcards;   
 
 const content = `
 <h1> TAROT WEB APPLICATION</h1>
@@ -20,10 +20,8 @@ document.body.innerHTML = content;
 
 deck.shuffleCards();
 
-deck.shuffleCards(); 
 
-
-x = deck.dealcards("3"); 
+x = deck.dealcards("celtic"); 
 console.log(x); 
 /*const content1 = `<h1> TAROT WEB APPLICATION</h1>
 <h2> Welcome to your very own tarot reader online!</h2>
