@@ -12,16 +12,15 @@ class Tarotdeck {
     shuffleCards () //method that randomizes the cards
     {  
         let y, x, i, z;
-        x = this.imagesofcards;  
-        for (i = (x.length -1); i > 0; i--) {
+        for (i = (this.imagesofcards.length -1); i > 0; i--) {
             y = Math.floor(Math.random() * (i + 1)); 
-            z = x[i]; 
-            x[i] = x[y]; 
-            x[y] = z;
+            z = this.imagesofcards[i]; 
+            this.imagesofcards[i] = this.imagesofcards[y]; 
+            this.imagesofcards[y] = z;
 
         }
 
-        return this.imagesofcards; // returns the shuffled up array of cards 
+    // this is a void function that shuffles the array of cards
 
     }
     
@@ -40,7 +39,7 @@ class Tarotdeck {
                 b[i]=this.imagesofcards[i+50]; 
             }
         }
-        b; //is the array of the cards
+       return b; //is the array of the cards
     }; 
 
     if (type == "3")
@@ -75,7 +74,7 @@ class Tarotdeck {
 
   printCards()
   {
-    
+
   }
 }; 
     export default Tarotdeck;
