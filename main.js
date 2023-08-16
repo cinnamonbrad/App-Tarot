@@ -12,9 +12,18 @@ const content = `
 <h2> Welcome to your very own tarot reader online!</h2>
 <h3> Press the button below to get started with using the online tarot reader</h3>
 <div class ="card_box">
-<img src="${deck.backofcards}" alt="back">
-</div>
-<button class="btn">Start</button>`; 
+`; 
+
+    // for () {
+
+    //     if ()
+    //     {    
+    //     `
+    //     <img src="${deck.backofcards}" alt="back">
+    //     </div>
+    //     <button class="btn">Start</button>`; 
+    //     }
+}
 document.body.innerHTML = content; 
 deck.shuffleCards();
 console.log(deck.imagesofcards); 
