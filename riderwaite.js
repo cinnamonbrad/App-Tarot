@@ -1,4 +1,4 @@
-const cards = ["/Images/backofcards.jpg",
+const cards = [
 "https://upload.wikimedia.org/wikipedia/commons/f/fd/Pents01.jpg",
 "https://upload.wikimedia.org/wikipedia/commons/9/9f/Pents02.jpg",
 "https://upload.wikimedia.org/wikipedia/commons/4/42/Pents03.jpg",

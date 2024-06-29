@@ -2,11 +2,11 @@
 class Tarotdeck {
     constructor(name, imagesofcards)
     {
-        this.name = name, 
-        this.imagesofcards = imagesofcards 
-        this.numberOfcards = 78; 
-        this.majorarcana = 22; 
-        this.minorarcana = 56; 
+        this.name = name
+        this.imagesofcards = imagesofcards //array of cards
+        this.numberOfcards = 78
+        this.majorarcana = 22
+        this.minorarcana = 56
         this.backofcards = "/Images/backofcards.jpg";
     }
     shuffleCards () //method that randomizes the cards
