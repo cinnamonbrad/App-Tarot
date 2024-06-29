@@ -6,9 +6,19 @@ img
     background-position: center; 
     margin-bottom: 1rem;
 }
-
-.card_box:hover {
-    margin-left: 200px; 
+card_2 {
+    width: 174.5px;
+    height:334.75px; 
+    background-size: contain;
+    background-position: center; 
+    margin-bottom: 1rem;
+}
+card_3 {
+    width: 174.5px;
+    height:334.75px; 
+    background-size: contain;
+    background-position: center; 
+    margin-bottom: 1rem;
 }
 .btn {
     font: size 50rem;
