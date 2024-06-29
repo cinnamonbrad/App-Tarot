@@ -72,9 +72,6 @@ class Tarotdeck {
     };
     }
 
-  printCards()
-  {
 
-  }
 }; 
     export default Tarotdeck;

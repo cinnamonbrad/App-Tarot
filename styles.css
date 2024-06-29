@@ -7,12 +7,12 @@ img
     margin-bottom: 1rem;
 }
 
-.card_box:hover
+.ard_box:hover (add a c here)
 {
 margin-left: 200px;
 }
 .btn {
-    font: size 3rem;
+    font: size 50rem;
     font-weight:700;
     /*padding:; */ 
     color:blueviolet; 
