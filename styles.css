@@ -12,6 +12,7 @@ card_2 {
     background-size: contain;
     background-position: center; 
     margin-bottom: 1rem;
+    float: left;
 }
 card_3 {
     width: 174.5px;
@@ -19,6 +20,10 @@ card_3 {
     background-size: contain;
     background-position: center; 
     margin-bottom: 1rem;
+    float: left;
+}
+buttons {
+    text-align: center;
 }
 .btn {
     font: size 50rem;

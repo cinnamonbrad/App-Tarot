@@ -10,14 +10,19 @@ const deck = new Tarotdeck("Rider-Waite",cards);
 const content = `
 <h1> TAROT WEB APPLICATION</h1>
 <h2> Choose a spread button below to get started with the online tarot reader!</h2>
-<div class ="card_box"> 
-<div id = "card1" class = "card_2"> </div>
-<div id = "card2" class = "card_3"> </div>
-<img id = "card" src="${deck.backofcards}" alt="back"> </div>
+<table style= "width:100%">
+<tr>
+<th><img id = "card" src="${deck.backofcards}" alt="back"> </th>
+<th><img id = "card1" src="${deck.backofcards}" alt="back7"></th>
+<th><img id = "card2" src="${deck.backofcards}" alt="back8"> </th>
+</tr>
+
 <div class = "buttons">
+<div style= "display: grid; place-items: center;" class = "buttons"> 
 <button id = "btn1" class="btn">Celtic Card Spread</button>
 <button  id = "btn2"  class="btn">3-Card Spread</button>
 <button  id = "btn3" class="btn">1-Card Spread</button>
+</div>
 `;
 document.body.innerHTML = content;   
 let card = document.getElementById("card"); 
@@ -33,14 +38,14 @@ const btn3 = document.getElementById("btn3"); // one-card spread
 btn2.addEventListener("click", function(dealThree){
     deck.shuffleCards();
     card.src = deck.imagesofcards[0]; 
-    let card1 = deck.imagesofcards[1]; 
-    let card2 = deck.imagesofcards[2]; 
-
+    card1.src = deck.imagesofcards[1]; 
+    card2.src = deck.imagesofcards[2]; 
+    
 });
 btn3.addEventListener("click", function(dealOne){
     deck.shuffleCards();
     card.src = deck.imagesofcards[0]; 
 });
-console.log(card); 
+
 
 ; 
