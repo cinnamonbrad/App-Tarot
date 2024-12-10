@@ -72,6 +72,5 @@ class Tarotdeck {
     };
     }
 
-
 }; 
     export default Tarotdeck;

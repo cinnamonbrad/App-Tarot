@@ -16,12 +16,14 @@ const content = `
 <th><img id = "card1" src="${deck.backofcards}" alt="back7"></th>
 <th><img id = "card2" src="${deck.backofcards}" alt="back8"> </th>
 </tr>
-
+</table>
 <div class = "buttons">
 <div style= "display: grid; place-items: center;" class = "buttons"> 
 <button id = "btn1" class="btn">Celtic Card Spread</button>
 <button  id = "btn2"  class="btn">3-Card Spread</button>
 <button  id = "btn3" class="btn">1-Card Spread</button>
+<div class = "reset">
+<button id="reset" class = "reset_btn"><img id ="reset_btn1" src = "/Images/reset button.png" alt = "reset"></button>
 </div>
 `;
 document.body.innerHTML = content;   
@@ -46,6 +48,8 @@ btn3.addEventListener("click", function(dealOne){
     deck.shuffleCards();
     card.src = deck.imagesofcards[0]; 
 });
-
-
-; 
+reset.addEventListener("click",function(reset){
+    card.src = deck.backofcards; 
+    card1.src = deck.backofcards; 
+    card2.src = deck.backofcards; 
+}); 
