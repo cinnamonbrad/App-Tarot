@@ -52,4 +52,4 @@ reset.addEventListener("click",function(reset){
     card.src = deck.backofcards; 
     card1.src = deck.backofcards; 
     card2.src = deck.backofcards; 
-}); 
+});
