@@ -46,7 +46,7 @@ buttons {
     color:white; 
 
 }
-reset_btn {
-    width:50px; 
+.reset_btn {
+    width: 50px; 
     height: 50px; 
 }

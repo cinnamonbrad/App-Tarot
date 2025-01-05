@@ -19,7 +19,7 @@ const content = `
 </table>
 <div style= "display: grid; place-items: center;" class = "buttons"> 
 <button  id = "btn2"  class="btn">3-Card Spread</button>
-<button id="reset" class = "reset_btn"><img src = "https://cinnamonbrad.github.io/App-Tarot/Images/reset button.png" alt = "reset"></button>
+<button id="reset"><img class = "reset_btn" src = "https://cinnamonbrad.github.io/App-Tarot/Images/reset button.png" alt = "reset"></button>
 </div>
 `;
 document.body.innerHTML = content;   
