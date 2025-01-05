@@ -9,7 +9,7 @@ const deck = new Tarotdeck("Rider-Waite",cards);
 
 const content = `
 <h1> TAROT WEB APPLICATION</h1>
-<h2> Choose a spread button below to get started with the online tarot reader!</h2>
+<h2> Click the spread button below to have your fortune read by the online tarot reader! Press the reset button to reset the cards and try again.</h2>
 <table style= "width:100%">
 <tr>
 <th><img a id = "card" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back"> </th>

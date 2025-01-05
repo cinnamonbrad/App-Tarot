@@ -1,5 +1,5 @@
 body {
-    background-color:aliceblue; 
+    background-color:rgba(166, 97, 6, 0.758); 
 }
 img
 {
@@ -45,4 +45,8 @@ buttons {
     background-color: purple;
     color:white; 
 
+}
+reset_btn {
+    width:50px; 
+    height: 50px; 
 }
