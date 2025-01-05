@@ -12,17 +12,15 @@ const content = `
 <h2> Choose a spread button below to get started with the online tarot reader!</h2>
 <table style= "width:100%">
 <tr>
-<th><img id = "card" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards" alt="back"> </th>
-<th><img id = "card1" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards" alt="back7"></th>
-<th><img id = "card2" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards" alt="back8"> </th>
+<th><img id = "card" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back"> </th>
+<th><img id = "card1" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back7"></th>
+<th><img id = "card2" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back8"> </th>
 </tr>
 </table>
-<div class = "buttons">
 <div style= "display: grid; place-items: center;" class = "buttons"> 
 <button  id = "btn2"  class="btn">3-Card Spread</button>
-<div class = "reset"> 
-<button id="reset" class = "reset_btn"><img id ="reset_btn1" src = "https://cinnamonbrad.github.io/App-Tarot/Images/reset button.png" alt = "reset"></button>
-</div>
+<button id="reset" class = "reset_btn"><img src = "https://cinnamonbrad.github.io/App-Tarot/Images/reset button.png" alt = "reset"></button>
+</div></div>
 `;
 document.body.innerHTML = content;   
 let card = document.getElementById("card"); 
@@ -47,7 +45,7 @@ btn2.addEventListener("click", function(dealThree){
     card.src = deck.imagesofcards[0]; 
 }); */
 reset.addEventListener("click",function(reset){
-    card.src = "https://cinnamonbrad.github.io/App-Tarot/Images/backofcards"; 
-    card1.src ="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards"; 
-    card2.src = "https://cinnamonbrad.github.io/App-Tarot/Images/backofcards"; 
+    card.src = "https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg"; 
+    card1.src ="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg"; 
+    card2.src = "https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg"; 
 });
