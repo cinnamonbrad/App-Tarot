@@ -12,15 +12,15 @@ const content = `
 <h2> Choose a spread button below to get started with the online tarot reader!</h2>
 <table style= "width:100%">
 <tr>
-<th><img id = "card" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back"> </th>
-<th><img id = "card1" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back7"></th>
-<th><img id = "card2" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back8"> </th>
+<th><img a id = "card" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back"> </th>
+<th><img a id = "card1" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back7"></th>
+<th><img a id = "card2" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back8"> </th>
 </tr>
 </table>
 <div style= "display: grid; place-items: center;" class = "buttons"> 
 <button  id = "btn2"  class="btn">3-Card Spread</button>
 <button id="reset" class = "reset_btn"><img src = "https://cinnamonbrad.github.io/App-Tarot/Images/reset button.png" alt = "reset"></button>
-</div></div>
+</div>
 `;
 document.body.innerHTML = content;   
 let card = document.getElementById("card"); 
