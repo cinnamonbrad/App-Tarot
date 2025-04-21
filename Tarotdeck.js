@@ -23,7 +23,7 @@ class Tarotdeck {
     // this is a void function that shuffles the array of cards
 
     }
-    
+    // dead function
     dealcards(type) //passes in an array of strings that are the cards
     {
         let b = []; 

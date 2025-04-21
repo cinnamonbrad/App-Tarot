@@ -9,7 +9,7 @@ const deck = new Tarotdeck("Rider-Waite",cards);
 
 const content = `
 <h1> TAROT WEB APPLICATION</h1>
-<h2> Click the spread button below to have your fortune read by the online tarot reader! Press the reset button to reset the cards and try again.</h2>
+<h2> Click the spread button below to have your fortune read by the online tarot reader! </h2>
 <table style= "width:100%">
 <tr>
 <th><img a id = "card" src="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg" alt="back"> </th>
@@ -19,9 +19,9 @@ const content = `
 </table>
 <div style= "display: grid; place-items: center;" class = "buttons"> 
 <button  id = "btn2"  class="btn">3-Card Spread</button>
-<button id="reset"><img class = "reset_btn" src = "https://cinnamonbrad.github.io/App-Tarot/Images/reset button.png" alt = "reset"></button>
 </div>
 `;
+/* reset button code in case i need to add it back. <button id="reset"><img class = "reset_btn" src = "https://cinnamonbrad.github.io/App-Tarot/Images/reset button.png" alt = "reset"></button>*/
 document.body.innerHTML = content;   
 let card = document.getElementById("card"); 
 let card1 = document.getElementById("card1");
@@ -33,19 +33,21 @@ const btn3 = document.getElementById("btn3"); // one-card spread
 //btn1.addEventListener("click", function(dealCeltic){ 
 
 //});
-btn2.addEventListener("click", function(dealThree){
+const dealThree = () => {
     deck.shuffleCards();
     card.src = deck.imagesofcards[0]; 
     card1.src = deck.imagesofcards[1]; 
     card2.src = deck.imagesofcards[2]; 
-    
-});
+    btn2.removeEventListener("click", dealThree); 
+};
+btn2.addEventListener("click", dealThree); 
+
 /*btn3.addEventListener("click", function(dealOne){
     deck.shuffleCards();
     card.src = deck.imagesofcards[0]; 
 }); */
-reset.addEventListener("click",function(reset){
+/*reset.addEventListener("click",function(reset){
     card.src = "https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg"; 
     card1.src ="https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg"; 
     card2.src = "https://cinnamonbrad.github.io/App-Tarot/Images/backofcards.jpg"; 
-});
+}); */
